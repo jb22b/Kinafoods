@@ -1,0 +1,287 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    cursor:default;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+/* Container for the main section */
+.main-section {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    font-family:"Bona Nova SC", serif;
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/1639556/pexels-photo-1639556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media (min-width: 768px) {
+    .main-section {
+        height: 60vh; /* Reduce height for mobile */
+        padding: 20px; /* Add padding for spacing */
+        background-size: contain; /* Fit the background image within the section */
+        background-position: top; /* Adjust background position if needed */
+    }
+}
+@media (min-width: 1024px) {
+    .main-section {
+        height: 80vh; /* Increase height for larger screens */
+        padding: 40px; /* Add padding for spacing */
+        background-size: cover; /* Keep the background image covering the section */
+        background-position: center; /* Center the background image */
+    }
+}
+/* Header and Menu */
+.header {
+    width: 100%;
+    background-color: #334538;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header a {
+    color:  #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nav-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:"Bona Nova SC", serif;
+}
+.nav-link{
+    margin-left: 10px;
+    margin-bottom: 20px
+}
+.nav-link a {
+    text-decoration: none;
+}
+.nav-link:hover{
+background-color:  rgb(168, 245, 214);
+border-radius: 5px;
+transition: color 1s ease;
+color: black;
+}
+/* Title styling */
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: white;
+    animation: fadeIn 3s ease-in;
+}
+.short{
+    background-color: #C7FDD6;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+.enjoy{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    animation: slideIn 1.5s ease-out;
+}
+.about-us{
+    background-color: #fff;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px;
+    margin-bottom: 50px;
+}
+.meet{
+    text-align: center;
+}
+div{
+    display: block;
+}
+.my-article{
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    background-image: url('https://images.pexels.com/photos/10526880/pexels-photo-10526880.jpeg?auto=compress&cs=tinysrgb&w=600');
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-family: "Quicksand", sans-serif;
+}
+.article{
+    text-align: left;
+}
+.heading1{
+    text-align: center;
+}
+.article-container{
+    background-color: #f0f7f7;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.heading2{
+    margin-left: 40px;
+    font-size: 20px;
+    font-family:"Bona Nova SC", serif;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.cake, .okro, .abom{
+   text-align: center;
+   font-family: "Quicksand", sans-serif;
+}
+.sub-cake, .sub-okro, .sub-abom{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+video {
+    display: block;
+    margin: 0 auto; /* Centers the video horizontally */
+}
+.cake-container{
+    background-color:#fff;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.content{
+    padding-top: 10px;
+    padding-bottom: 60;
+}
+.okro-container{
+    background-color:#f0f7f7;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.abom-container{
+    background-color:#fff;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.end-text{
+   text-align: center;
+   background-color: #f0f7f7;
+   padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family:"Edu AU VIC WA NT Hand", cursive;
+}
+li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 60px;
+    justify-content: right;
+    font-size: 15px;
+    color: #fff;
+}
+footer{
+    text-align: right;
+    background-color: #334538;
+    padding-top: 5px; 
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-family: "Quicksand", sans-serif;
+}
+/* Phone view */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+    .sub-cake, .sub-okro, .sub-abom{
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: 0.8rem;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+    li{
+        list-style-type: none;
+        display: inline;
+        margin-right: 30px;
+        justify-content: right;
+        color: #fff;
+    }
+    .heading2{
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+    .cake, .okro, .abom{
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.2rem;
+     }
+}
+/* Tablet view */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
